@@ -1,0 +1,359 @@
+html {
+    background-color: #cecfcd;
+}
+
+header {
+    font-family: 'Goldman', sans-serif;
+    font-weight: 400;
+    background-color: #A3FFB4;
+    height: 75px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+#youtube-img {
+    width: 50px;
+    height: 50px;
+}
+
+a img {
+    transition: transform 0.2s;
+}
+
+a img:hover {
+    transform: scale(1.05)
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.introduction-container {
+    background-image: url(assets/images/introduction-background.png);
+    background-size: cover;
+    background-position: center;
+    height: 915px;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-text {
+    text-align: center;
+    margin-top: 225px;
+    color: white;
+    font-size: 100px;
+}
+
+.introudction-arrow-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+.highlighted {
+    color: #3BDAC7;
+}
+
+#arrow-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+#arrow {
+    width: 111px;
+    height: 125px;
+}
+
+
+.main-advantages-container {
+    background-color: #FAFFD2;
+    height: 900px;
+}
+
+.main-advantages-title {
+    margin-top: 0px;
+    padding-top: 25px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.main-advantages-boxes {
+    background-color: #DBEBCC;
+    height: 800px;
+    display: flex;
+    border: 5px black solid;
+}
+
+.main-advantages-box {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.main-advantages-box-title {
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.main-advantages-box-description {
+    margin-top: 0px;
+    font-size: 32px;
+}
+
+.extension-menu {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#extension-menu-img {
+    width: 500px;
+    height: 682px;
+}
+
+.how-it-works-container {
+    background-color: #FAFFD2;
+    height: 900px;
+    margin-top: 25px;
+}
+
+.how-it-works-title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+
+.how-it-works-box {
+    background-color: #DBEBCC;
+    height: 800px;
+    border: 5px black solid;
+}
+
+.settings {
+    display: flex;
+    background-color: white;
+    height: 85px;
+    width: 1350px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.settings-element {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logic {
+    width: 1250px;
+    height: 200px;
+    background-color: #50829B;
+    margin: 0px auto;
+}
+
+.logic-title {
+    color: #E1FFB7;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logic-text {
+    margin-top: 0px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.video-box {
+    padding-top: 15px;
+    text-align: center;
+}
+#bot-video {
+    width: 780px;
+    height: 430px;
+}   
+
+
+.pricing-container {
+    background-color: #FAFFD2;
+    height: 900px;
+    margin-top: 25px;
+}
+
+.pricing-title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+
+.pricing-box {
+    background-color: #DBEBCC;
+    height: 815px;
+    border: 5px black solid;
+}
+
+.pricing-subscription-info {
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+}
+
+.pricing-subscription-box {
+    background-color: #5C888B;
+    width: 1280px;
+    height: 135px;
+    border-radius: 35px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+.pricing-subscription-text {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+.pricing-main-info {
+    background-color: #FFEA97;
+    height: 460px;
+}
+
+.pricing-mini-container {
+    display: flex;
+}
+
+.possible-payments-text {
+    font-size: 48px;
+    padding-top: 30px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.payment-block {
+    width: 60%;
+    padding-top: 65px;
+    padding-left: 25px;
+}
+
+.PayPal {
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.PayPal img {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+
+.Steam {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.Steam img {
+    width: 76px;
+    height: 70px;
+    padding-right: 15px;
+}
+
+
+.payment-methods-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 48px;
+    padding-left: 15px;
+}
+
+.sale-block {
+    width: 500px;
+    height: 320px;
+    background-image: url(assets/images/mini-background.png);
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+.sale-block-title {
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    padding-left: 50px;
+    padding-top: 35px;
+}
+
+.sale-block-text {
+    font-size: 32px;
+    color: #FF5757;
+    margin: 0px;
+    padding-left: 115px;
+}
+
+.sale-block-price {
+    font-size: 96px;
+    color: #A1FF9C;
+    margin: 0px;
+    padding-left: 165px;
+    padding-top: 30px;
+}
+
+.pricing-contact-info {
+    background-color: white;
+    width: 1126px;
+    height: 141px;
+    margin: 15px auto;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.pricing-contact-info:hover #discord-account-name {
+    transform: scale(1.02);
+}
+
+.pricing-contact-text {
+    font-size: 48px;
+    padding-top: 25px;
+    margin: 0px;
+}
+
+.discord-contact-subtext {
+    font-size: 20px;
+}
+
+#discord-account-name {
+    color: #01E358;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
