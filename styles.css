@@ -120,13 +120,15 @@ body {
     font-size: 32px;
 }
 
-.extension-menu {
-    margin-left: 50px;
-    margin-top: 50px;
+.extension-image-box {
+    margin-top: 100px;
+    margin-left: 25px;
 }
-#extension-menu-img {
-    width: 500px;
-    height: 682px;
+
+#extension-main-img {
+    width: 525px;
+    height: 625px;
+
 }
 
 .how-it-works-container {
