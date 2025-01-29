@@ -1,5 +1,5 @@
 html {
-    background-color: #a3a8aa;
+    background-color: #acdff4;
 }
 
 header {
@@ -43,8 +43,9 @@ body {
 
 .introduction-container {
     background-image: url(assets/images/introduction-background.png);
-    background-size: cover;
+    background-size: 105%;
     background-position: center;
+    background-repeat: no-repeat;
     height: 915px;
     display: flex;
     flex-direction: column;
@@ -218,31 +219,10 @@ body {
     border: 5px black solid;
 }
 
-.pricing-subscription-info {
-    display: flex;
-    padding-top: 25px;
-    justify-content: center;
-}
-
-.pricing-subscription-box {
-    background-color: #5C888B;
-    width: 1280px;
-    height: 135px;
-    border-radius: 35px;
-    text-align: center;
-    margin-left: 45px;
-}
-
-.pricing-subscription-text {
-    color: white;
-    font-size: 48px;
-    margin-bottom: 0px;
-    margin-top: 5px;
-}
-
 
 .pricing-main-info {
-    background-color: #FFEA97;
+    margin-top: 125px;
+    background-color: #accc6c;
     height: 460px;
 }
 
@@ -250,17 +230,9 @@ body {
     display: flex;
 }
 
-.possible-payments-text {
-    font-size: 48px;
-    padding-top: 30px;
-    padding-left: 50px;
-    margin-bottom: 0px;
-    margin-top: 20px;
-}
-
 .payment-block {
-    width: 60%;
-    padding-top: 65px;
+    width: 400px;
+    padding-top: 25px;
     padding-left: 25px;
 }
 
@@ -271,8 +243,8 @@ body {
 }
 
 .PayPal img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     justify-content: center;
 }
 
@@ -284,16 +256,34 @@ body {
 }
 
 .Steam img {
-    width: 76px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     padding-right: 15px;
+    opacity: 0.8;
 }
+
+.Crypto {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.Crypto img {
+    width: 100px;
+    height: 100px;
+    padding-right: 15px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
 
 
 .payment-methods-text {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 48px;
+    font-size: 40px;
+    font-weight: bold;
     padding-left: 15px;
 }
 
@@ -302,7 +292,7 @@ body {
     height: 320px;
     background-image: url(assets/images/mini-background.png);
     background-size: cover;
-    margin-top: 0px;
+    margin-top: 75px;
     margin-left: 25px;
 }
 
@@ -329,11 +319,24 @@ body {
     padding-top: 30px;
 }
 
+.soon-title {
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 130px;
+}
+
+#soon-block {
+    opacity: 0.7;
+}
+
 .pricing-contact-info {
     background-color: white;
     width: 1126px;
-    height: 141px;
-    margin: 15px auto;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 55px;
     border-radius: 45px;
     text-align: center;
 }
@@ -358,3 +361,6 @@ body {
     display: inline-block;
     transition: transform 0.2s;
 }
+
+
+
