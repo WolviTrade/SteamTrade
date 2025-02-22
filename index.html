@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-    <title>Skinport trading bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
+    <title>Steamercado</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZPJB8SE81"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,121 +15,77 @@
         gtag('config', 'G-7ZPJB8SE81');
     </script>
 </head>
-<header>
-    <div class="header-container">
-        <h1 class="header-title">SKINPORT BOT</h1>
-        <a href="https://www.youtube.com/@steamercado" target="_blank">
-            <img id="youtube-img" src="assets/images/youtube-icon.png" alt="youtube icon">
-        </a>
-    </div>
-</header>
-<body>
-    <div class="introduction-container">
-        <div class="introduction-text-box">
-            <h1 class="introduction-text">
-                Find profitable items <br>
-                <span class="highlighted">faster</span> with this <br>
-                sniping bot
-            </h1>
+<body> 
+    <header>
+        <div class="project-name-box">
+            <h2 id="project-name">Steamercado</h2>
         </div>
-        <div class="introduction-arrow-box">
-            <a id="arrow-link" href="#main-advantages-section">
-                <img id="arrow" src="assets/images/arrow.png" alt="arrow">
+        <div class="youtube-icon-box">
+            <a href="https://www.youtube.com/@steamercado" target="_blank">
+                <img src="assets/images/youtube-icon.png" alt="youtube-icon" id="youtube-icon">
+            </a>
+        </div>
+    </header>
+    <div class="introduction-page">
+        <h1 id="introduction-title">Automate Your Sniping Routine and<br>Save Time with Our Trading Bots</h1>
+        <p id="introduction-subtitle">Easy-to-use extensions, no complex setup</p>
+        <img src="assets/images/arrow.png" alt="arrow" id="arrow">
+        <div class="get-started-button-box">
+            <a href="#product-page">
+                <button id="get-started-button">Get Started</button>
             </a>
         </div>
     </div>
-    <div class="main-advantages-container" id="main-advantages-section">
-        <h1 class="main-advantages-title" >MAIN ADVANTAGES</h1>
-        <div class="main-advantages-boxes">
-            <div class="benefits">
-                <div class="main-advantages-box">
-                    <h2 class="main-advantages-box-title">Fast Sniping Speed</h2>
-                    <p class="main-advantages-box-description">Snipes items in under 400 ms</p>
-                </div>
-                <div class="main-advantages-box">
-                    <h2 class="main-advantages-box-title">Saves Your Time</h2>
-                    <p class="main-advantages-box-description">Bot automatically filters items</p>
-                </div>
-                <div class="main-advantages-box">
-                    <h2 class="main-advantages-box-title">Flexible Settings</h2>
-                    <p class="main-advantages-box-description">Customize the bot to fit your needs for maximum profit</p>
-                </div>
-                <div class="main-advantages-box">
-                    <h2 class="main-advantages-box-title">Compare Prices with Buff163</h2>
-                    <p class="main-advantages-box-description">Parser works 24/7 and updates buff prices every hour</p>
-                </div>
-                <div class="main-advantages-box">
-                    <h2 class="main-advantages-box-title">Gain an Edge Over Other Traders</h2>
-                    <p class="main-advantages-box-description">Bot sniping will make flipping much easier and more profitable</p>
-                </div>
-                <div class="main-advantages-box">
-                    <h2 class="main-advantages-box-title">Affordable price</h2>
-                    <p class="main-advantages-box-description">Lower price than competitor products</p>
-                </div>
+    <div class="product-page" id="product-page">
+        <h1 id="product-page-title">Products</h1>
+        <p id="product-page-subtitle">Choose the bot that fits your needs</p>
+        <div class="product-boxes">
+            <div class="product-box" onclick="openPopup('popup1')">
+                <h2 class="product-title">SKINPORT</h2>
+                <p class="product-price">20$</p>
             </div>
-            <div class="extension-image-box">
-                <img id="extension-main-img" src="assets/images/main-page.png" alt="bot-interface">
+            <div class="product-box" onclick="openPopup('popup2')">
+                <h2 class="product-title">CSGO EMPIRE</h2>
+                <p class="product-price">15$</p>
+            </div>
+            <div class="product-box not-available">
+                <p class="soon-text">Soon</p>
             </div>
         </div>
-    </div>
-    <div class="how-it-works-container">
-        <h1 class="how-it-works-title">HOW IT WORKS?</h1>
-        <div class="how-it-works-box">
-            <div class="settings">
-                <p class="settings-element">Install the extension</p>
-                <img src="assets/images/small-arrow.png" alt="small-arrow">
-                <p class="settings-element">Configure your settings</p>
-                <img src="assets/images/small-arrow.png" alt="small-arrow">
-                <p class="settings-element">Start the bot</p>               
-            </div>
-            <div class="logic">
-                <h2 class="logic-title">Extension logic</h2>
-                <p class="logic-text">
-                    Bot checks listings every few milliseconds. If it finds an item matching your <br>
-                    snipe settings, it will open the buying page as quickly as possible, allowing you <br>
-                    to complete the purchase manually with your preferred payment method.
+
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup1')">&times;</span>
+                <h2 class="popup-bot-title">Skinport snipe bot v1.5</h2>
+                <p class="popup-bot-text">
+                    The website is still under development<br>
+                    Detailed bot information will be added soon<br>
+                    If you want to buy monthly subscription<br>
+                    feel free to contact me on Discord
                 </p>
             </div>
-            <div class="video-box">
-                <iframe id="bot-video" src="https://www.youtube.com/embed/sJbZ7l-MqEk?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup2')">&times;</span>
+                <h2 class="popup-bot-title">Csgo Empire bot v1.0</h2>
+                <p class="popup-bot-text">
+                    The website is still under development<br>
+                    Detailed bot information will be added soon<br>
+                    If you want to buy monthly subscription<br>
+                    feel free to contact me on Discord
+                </p>
             </div>
         </div>
-    </div>
-    <div class="pricing-container">
-        <h1 class="pricing-title">PRICING</h1>
-        <div class="pricing-box">
-            <div class="pricing-main-info">
-                <div class="pricing-mini-container">
-                    <div class="payment-block">
-                        <div class="PayPal">
-                            <img id="PayPal-img" src="assets/images/paypal-icon.png" alt="PayPal">
-                            <p class="payment-methods-text">PayPal</p>
-                        </div>
-                        <div class="Steam">
-                            <img id="Steam" src="assets/images/steam-icon.png" alt="Steam">
-                            <p class="payment-methods-text">Skins</p>
-                        </div>
-                        <div class="Crypto">
-                            <img id="Crypto" src="assets/images/tether-usdt-logo.png" alt="Crypto">
-                            <p class="payment-methods-text">Crypto</p>
-                        </div>
-                    </div>
-                    
-                    <div class="sale-block">
-                        <h2 class="sale-block-title">SKINPORT SNIPE BOT</h2>
-                        <p class="sale-block-text">monthly payment</p>
-                        <p class="sale-block-price">20$</p>
-                    </div>
-                    <div class="sale-block" id="soon-block">
-                        <h2 class="soon-title">Coming soon</h2>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="pricing-contact-info">
-                <p class="pricing-contact-text">Contact me on discord: <span id="discord-account-name">skinportbotdevelopment</span></p>
-            </div>
+
+
+        <div class="discord-box">
+            <img src="assets/images/discord-icon.png" alt="discord-icon" id="discord-icon">
+            <p id="discord-text">#steamercado</p>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

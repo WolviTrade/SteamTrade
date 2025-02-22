@@ -1,366 +1,279 @@
-html {
-    background-color: #acdff4;
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #1E1E1E;
+    margin: 0px;
 }
 
 header {
-    font-family: 'Goldman', sans-serif;
-    font-weight: 400;
-    background-color: #A3FFB4;
-    height: 75px;
-}
-
-.header-container {
+    width: 100%;
+    top: 0px;
+    height: 70px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: white;
+    user-select: none;
+    position: fixed;
 }
 
-.header-title {
-    font-size: 30px;
-    margin-right: 15px;
-}
-
-#youtube-img {
+#youtube-icon {
     width: 50px;
     height: 50px;
+    padding-top: 6px;
+    margin-left: 10px;
 }
 
-a img {
-    transition: transform 0.2s;
+#project-name {
+    font-size: 35px;
+    margin: 0px;
+    user-select: none;
 }
 
-a img:hover {
-    transform: scale(1.05)
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-
-.introduction-container {
-    background-image: url(assets/images/introduction-background.png);
-    background-size: 105%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 915px;
+.introduction-page {
     display: flex;
     flex-direction: column;
-}
-
-.introduction-text-box {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    padding-top: 70px;
+    height: 900px
 }
 
-.introduction-text {
-    text-align: center;
-    margin-top: 225px;
+#introduction-title {
+    font-size: 60px;
     color: white;
-    font-size: 100px;
+    margin-top: 185px;
+    text-align: center;
+    user-select: none;
 }
 
-.introudction-arrow-box {
-    display: flex;
-    justify-content: center;
-}
-
-
-.highlighted {
-    color: #3BDAC7;
-}
-
-#arrow-link {
-    display: flex;
-    justify-content: center;
-    margin-top: 75px;
+#introduction-subtitle {
+    font-size: 35px;
+    color: #00BFAE;
+    text-align: center;
+    user-select: none;
 }
 
 #arrow {
-    width: 111px;
-    height: 125px;
-}
-
-
-.main-advantages-container {
-    background-color: #FAFFD2;
-    height: 900px;
-}
-
-.main-advantages-title {
-    margin-top: 0px;
-    padding-top: 25px;
-    font-size: 48px;
-    text-align: center;
-}
-
-.main-advantages-boxes {
-    background-color: #DBEBCC;
-    height: 800px;
-    display: flex;
-    border: 5px black solid;
-}
-
-.main-advantages-box {
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-
-.main-advantages-box-title {
-    font-size: 32px;
-    margin-bottom: 0px;
-}
-
-.main-advantages-box-description {
-    margin-top: 0px;
-    font-size: 32px;
-}
-
-.extension-image-box {
-    margin-top: 100px;
-    margin-left: 25px;
-}
-
-#extension-main-img {
-    width: 525px;
-    height: 625px;
-
-}
-
-.how-it-works-container {
-    background-color: #FAFFD2;
-    height: 900px;
     margin-top: 25px;
+    width: 175px;
+    height: 175px;
+    user-select: none;
 }
 
-.how-it-works-title {
+#get-started-button {
+    width: 250px;
+    height: 75px;
+    border-radius: 45px;
+    background-color: rgba(0, 191, 174, 0.68);
+    border: none;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 15px;
+    box-shadow: 0px 8px 10px 0px rgba(223, 215, 215, 0.25);
+    user-select: none;
+    margin-top: 40px;
+    transition: 0.3s ease;
+}
+
+#get-started-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    #introduction-title {
+        font-size: 45px;
+        margin-top: 100px;
+    }
+
+    #introduction-subtitle {
+        font-size: 28px;
+    }
+
+    #arrow {
+        width: 120px;
+        height: 120px;
+    }
+
+    #get-started-button {
+        width: 200px;
+        height: 60px;
+        font-size: 28px;
+    }
+}
+
+.product-page {
+    padding-top: 70px;
     text-align: center;
-    font-size: 48px;
-    margin-top: 0px;
-    padding-top: 25px;
+    height: 100%;
+    max-height: 875px;
 }
 
-.how-it-works-box {
-    background-color: #DBEBCC;
-    height: 800px;
-    border: 5px black solid;
+#product-page-title {
+    color: #00BFAE; 
+    font-size: 55px;
+    padding-top: 60px;
+    margin-bottom: 25px;
+    user-select: none;
 }
 
-.settings {
-    display: flex;
+#product-page-subtitle {
+    color: #ffffff; 
+    font-size: 30px;
+    margin-top: 25px;
+    user-select: none;
+}
+
+.product-boxes {
     background-color: white;
-    height: 85px;
-    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    padding: 75px 0px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    user-select: none;
+}
+
+.product-box {
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    height: 265px;
+    background-color: black;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.product-title {
+    color: white;
+    font-size: 33px;
+    padding-top: 15px;
+}
+
+.product-price {
+    color: #00BFAE;
+    font-size: 65px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.not-available {
+    opacity: 0.65;
+}
+
+.soon-text {
+    color: white;
+    margin-top: 110px;
+    font-size: 35px;
+    opacity: 0.65;
+}
+
+
+@media (max-width: 1024px) {
+    .product-box {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-box {
+        width: 100%;
+        max-width: 90%; 
+    }
+}
+
+
+
+
+
+
+
+
+.discord-box {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto;
+    margin-top: 15px;
 }
 
-.settings-element {
-    font-size: 32px;
-    font-weight: bold;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.logic {
-    width: 1250px;
-    height: 200px;
-    background-color: #50829B;
-    margin: 0px auto;
-}
-
-.logic-title {
-    color: #E1FFB7;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-
-.logic-text {
-    margin-top: 0px;
-    color: white;
-    font-size: 32px;
-    text-align: center;
-}
-
-.video-box {
-    padding-top: 15px;
-    text-align: center;
-}
-#bot-video {
-    width: 780px;
-    height: 430px;
+#discord-icon {
+    width: 67px;
+    height: 67px;
+    margin-right: 15px;
 }   
 
-
-.pricing-container {
-    background-color: #FAFFD2;
-    height: 900px;
-    margin-top: 25px;
-}
-
-.pricing-title {
-    text-align: center;
-    font-size: 48px;
-    margin-top: 0px;
-    padding-top: 25px;
-}
-
-.pricing-box {
-    background-color: #DBEBCC;
-    height: 815px;
-    border: 5px black solid;
-}
-
-
-.pricing-main-info {
-    margin-top: 125px;
-    background-color: #accc6c;
-    height: 460px;
-}
-
-.pricing-mini-container {
-    display: flex;
-}
-
-.payment-block {
-    width: 400px;
-    padding-top: 25px;
-    padding-left: 25px;
-}
-
-.PayPal {
-    display: flex;
-    align-items: center;
-    padding-left: 45px;
-}
-
-.PayPal img {
-    width: 125px;
-    height: 125px;
-    justify-content: center;
-}
-
-.Steam {
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    padding-top: 30px;
-}
-
-.Steam img {
-    width: 100px;
-    height: 100px;
-    padding-right: 15px;
-    opacity: 0.8;
-}
-
-.Crypto {
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    padding-top: 30px;
-}
-
-.Crypto img {
-    width: 100px;
-    height: 100px;
-    padding-right: 15px;
-    margin-top: 15px;
-    opacity: 0.9;
-}
-
-
-
-.payment-methods-text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 15px;
-}
-
-.sale-block {
-    width: 500px;
-    height: 320px;
-    background-image: url(assets/images/mini-background.png);
-    background-size: cover;
-    margin-top: 75px;
-    margin-left: 25px;
-}
-
-.sale-block-title {
+#discord-text {
     color: white;
-    font-size: 40px;
-    margin: 0px;
-    padding-left: 50px;
-    padding-top: 35px;
+    font-size: 43px;
 }
 
-.sale-block-text {
-    font-size: 32px;
-    color: #FF5757;
-    margin: 0px;
-    padding-left: 115px;
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    user-select: none;
 }
 
-.sale-block-price {
-    font-size: 96px;
-    color: #A1FF9C;
-    margin: 0px;
-    padding-left: 165px;
-    padding-top: 30px;
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    width: 500px;
+    height: 250px;
+    position: relative;
+    animation: fadeIn 0.3s ease;
 }
 
-.soon-title {
-    font-size: 55px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.popup-bot-title {
+    font-size: 35px;
     text-align: center;
-    margin-top: 130px;
+    color: #000000;
 }
 
-#soon-block {
-    opacity: 0.7;
-}
-
-.pricing-contact-info {
-    background-color: white;
-    width: 1126px;
-    height: 120px;
-    margin: 0 auto;
-    margin-top: 55px;
-    border-radius: 45px;
+.popup-bot-text {
+    font-size: 23px;
+    font-weight: 400;
     text-align: center;
 }
-
-.pricing-contact-info:hover #discord-account-name {
-    transform: scale(1.02);
-}
-
-.pricing-contact-text {
-    font-size: 48px;
-    padding-top: 25px;
-    margin: 0px;
-}
-
-.discord-contact-subtext {
-    font-size: 20px;
-}
-
-#discord-account-name {
-    color: #01E358;
-    font-weight: 700;
-    display: inline-block;
-    transition: transform 0.2s;
-}
-
-
 
