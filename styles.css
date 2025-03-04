@@ -351,13 +351,50 @@ header {
     margin-right: 35px;
 }
 
-#csgoempire-bot-image {
+#skinport-bot-image, #csgoempire-bot-image {
     width: 472px;
     height: 550px;
 }
 
-#csgoempire-bot-image {
-    width: 472px;
-    height: 550px;
+@media (max-width: 1350px) {
+    #skinport-bot-image, #csgoempire-bot-image {
+        width: 400px;
+        height: 460px;
+    }
+    .popup-bot-title {
+        font-size: 50px;
+    }
+    .popup-bot-subtitle {
+        font-size: 35px;
+    }
+    .popup-bot-text {
+        font-size: 30px;
+    }
+    #download-button-skinport {
+        margin-top: 80px;
+    }
+    #download-button-csgo-empire {
+        margin-top: 120px;
+    }
 }
 
+@media (max-width: 1160px) {
+    #skinport-bot-image, #csgoempire-bot-image {
+        display: none;
+    }
+    .popup-bot-title {
+        font-size: 32px;
+    }
+    .popup-bot-subtitle {
+        font-size: 30px;
+    }
+    .popup-bot-text {
+        font-size: 23px;
+    }
+    #download-button-skinport {
+        margin-top: 30px;
+    }
+    #download-button-csgo-empire {
+        margin-top: 50px;
+    }
+}
