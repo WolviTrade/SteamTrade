@@ -319,6 +319,11 @@ header {
     margin-top: 90px;
 }
 
+#download-button-csgoroll {
+    margin-top: 105px;
+    margin-bottom: 5px;
+}
+
 #payment-methods-text {
     margin-top: 24px;
     margin-bottom: 12px;
@@ -351,13 +356,13 @@ header {
     margin-right: 35px;
 }
 
-#skinport-bot-image, #csgoempire-bot-image {
+#skinport-bot-image, #csgoempire-bot-image, #csgoroll-bot-image {
     width: 472px;
     height: 550px;
 }
 
 @media (max-width: 1350px) {
-    #skinport-bot-image, #csgoempire-bot-image {
+    #skinport-bot-image, #csgoempire-bot-image, #csgoroll-bot-image {
         width: 400px;
         height: 460px;
     }
@@ -376,10 +381,13 @@ header {
     #download-button-csgo-empire {
         margin-top: 120px;
     }
+    #download-button-csgoroll {
+        margin-top: 140px;
+    }
 }
 
 @media (max-width: 1160px) {
-    #skinport-bot-image, #csgoempire-bot-image {
+    #skinport-bot-image, #csgoempire-bot-image, #csgoroll-bot-image{
         display: none;
     }
     .popup-bot-title {
@@ -396,5 +404,8 @@ header {
     }
     #download-button-csgo-empire {
         margin-top: 50px;
+    }
+    #download-button-csgoroll {
+        margin-top: 60px;
     }
 }

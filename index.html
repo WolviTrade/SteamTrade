@@ -42,16 +42,17 @@
         <h1 id="product-page-title">Products</h1>
         <p id="product-page-subtitle">Choose the bot that fits your needs</p>
         <div class="product-boxes">
-            <div class="product-box" onclick="openPopup('popup1')">
-                <h2 class="product-title">SKINPORT</h2>
-                <p class="product-price">20$</p>
-            </div>
             <div class="product-box" onclick="openPopup('popup2')">
                 <h2 class="product-title">CSGO EMPIRE</h2>
                 <p class="product-price">15$</p>
             </div>
-            <div class="product-box not-available">
-                <p class="soon-text">Soon</p>
+            <div class="product-box" onclick="openPopup('popup1')">
+                <h2 class="product-title">SKINPORT</h2>
+                <p class="product-price">20$</p>
+            </div>
+            <div class="product-box" onclick="openPopup('popup3')">
+                <h2 class="product-title">CSGOROLL</h2>
+                <p class="product-price">15$</p>
             </div>
         </div>
 
@@ -111,6 +112,36 @@
                     </div>
                     <div class="image-box">
                         <img src="assets/images/csgoempire-bot-interface.png" alt="bot-interface" id="csgoempire-bot-image">
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <p class="popup-bot-text" id="contact-me-text">Contact me on Discord to buy a monthly subscription: <span class="highlighted discord-nickname">#steamercado</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <span class="close" onclick="closePopup('popup3')">&times;</span>
+                    <h2 class="popup-bot-title">CSGOROLL BOT</h2>
+                </div>  
+                <div class="popup-main">
+                    <div class="info-box">
+                        <h2 class="popup-bot-subtitle">How it works?</h2>
+                        <p class="popup-bot-text">
+                            The bot scans listings every 10-15 ms<br>
+                            <span class="highlighted">If auto-buy is turned on and a profitable item<br>
+                            is found, it buys it immediately.</span> Otherwise it<br>
+                            just adds the item to the buying cart
+                        </p>
+                        <a href="https://drive.google.com/uc?export=download&id=1iQhxbPIehIB5ZNogi9V6XKRDa1_bKqXH" download>
+                            <button id="download-button-csgoroll" class="download-button"></button>
+                        </a>
+                        <p class="popup-bot-text" id="payment-methods-text">Payment methods: <span class="highlighted">Skins</span>, <span class="highlighted">Crypto</span>, <span class="highlighted">PayPal</span></p>
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/images/csgoroll-bot-interface.png" alt="bot-interface" id="csgoroll-bot-image">
                     </div>
                 </div>
                 <div class="popup-footer">
